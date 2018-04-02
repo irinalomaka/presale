@@ -79,7 +79,7 @@ html, body {
   	justify-content: center;
 }
 
-#login_container, #register_container {
+#login_container, #register_container, #presale_container, #user_container {
 	margin: 12px;
 	width: 300px;
 	color: white;
@@ -101,5 +101,15 @@ html, body {
 	margin-right: 36px;
 }
 
+.user_info, .presale_info {
+	color: #00CCAD;
+	font-size: 16px;
+	align-self: center;
+}
+
+.presale_value {
+	font-size: 16px;
+	padding-left: 6px;
+}
 
 
