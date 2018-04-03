@@ -19,15 +19,15 @@
     <div id="main_container">
       <div class="form-row">
         <div class="form-group" id="login_container">
-          <form>
+          <form name="loginForm">
             <div class="form-group">
                <div>Login to our site</div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="loginEmail" name="loginEmail" onkeyup="isValidEmailInput(this)" placeholder="Email">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password" onkeyup="isValidPasswordInput(this)">
             </div>
             <div class="form-group">
               <input id="btn_login" class="form-control" type="button" value="Login" onclick="loginUser()">
@@ -41,10 +41,10 @@
               <div>Presale registration</div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="registerEmail" placeholder="Email">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <input type="password" class="form-control" id="registerPassword" placeholder="Password">
             </div>
              <div class="form-group">
                 <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">

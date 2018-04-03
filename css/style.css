@@ -1,11 +1,3 @@
-html, body {
-	margin: 0px;
-	padding: 0px;	
-	width: 100%;
-	height: 100%;
-	/*background: linear-gradient(#0052FF,  #8080ff);*/
-}
-
 @keyframes move-twink-back{
   from{background-position: 0 0;}
   to{background-position: -10000px 5000px;}
@@ -21,6 +13,14 @@ html, body {
 @-ms-keyframes move-twink-back{
   from{background-position: 0 0;}
   to{background-position: -10000px 5000px;}
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;	
+	width: 100%;
+	height: 100%;
+	/*background: linear-gradient(#0052FF,  #8080ff);*/
 }
 
 .stars, .twinkling {
@@ -111,5 +111,7 @@ html, body {
 	font-size: 16px;
 	padding-left: 6px;
 }
+
+
 
 
