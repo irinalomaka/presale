@@ -1,0 +1,32 @@
+[debug] [2018-04-03T14:05:04.387Z] ----------------------------------------------------------------------
+[debug] [2018-04-03T14:05:04.390Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-04-03T14:05:04.390Z] CLI Version:   3.17.7
+[debug] [2018-04-03T14:05:04.390Z] Platform:      darwin
+[debug] [2018-04-03T14:05:04.390Z] Node Version:  v9.5.0
+[debug] [2018-04-03T14:05:04.391Z] Time:          Tue Apr 03 2018 17:05:04 GMT+0300 (EEST)
+[debug] [2018-04-03T14:05:04.391Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-03T14:05:04.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-03T14:05:04.403Z] > authorizing via signed-in user
+[debug] [2018-04-03T14:05:04.404Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/presale-57bdb  
+  
+ Tue Apr 03 2018 17:05:04 GMT+0300 (EEST)
+[debug] [2018-04-03T14:05:05.569Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-03T14:05:05.569Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/presale-57bdb/tokens  
+  
+ Tue Apr 03 2018 17:05:05 GMT+0300 (EEST)
+[debug] [2018-04-03T14:05:06.502Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-03T14:05:06.503Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/presale-57bdb  
+  
+ Tue Apr 03 2018 17:05:06 GMT+0300 (EEST)
+[debug] [2018-04-03T14:05:07.541Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/irene/Documents/truffle/presale'...
+[info] 
+[debug] [2018-04-03T14:05:07.542Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/681959636801/clients/_:getWebAppConfig  
+  
+ Tue Apr 03 2018 17:05:07 GMT+0300 (EEST)
+[debug] [2018-04-03T14:05:08.262Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

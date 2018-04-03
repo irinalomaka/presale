@@ -36,24 +36,24 @@
         </div>
         <div id="line"></div>
         <div class="form-group" id="register_container">
-          <form>
+          <form name="registrationForm">
             <div class="form-group">
               <div>Presale registration</div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="registerEmail" placeholder="Email">
+                <input type="email" class="form-control" id="registerEmail" placeholder="Email" onkeyup="isValidEmailInput(this)">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="registerPassword" placeholder="Password">
+                <input type="password" class="form-control" id="registerPassword" placeholder="Password" onkeyup="isValidPasswordInput(this)">
             </div>
              <div class="form-group">
-                <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" onkeyup="isValidPasswordInput(this)">
             </div>
              <div class="form-group">
                 <input type="tel" class="form-control" id="inputPhone" placeholder="Phone">
             </div>
             <div class="form-group">
-                <input id="btn_rigister" class="form-control" type="button" value="Register">
+                <input id="btn_rigister" class="form-control" type="button" value="Register" onclick="registerUserStep1()">
              </div>
           </form>
         </div>
@@ -61,4 +61,16 @@
     </div>
   </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyBMYRm-1zdzj-nR1E1BleQS7fa9gbHWVqU",
+    authDomain: "presale-57bdb.firebaseapp.com",
+    databaseURL: "https://presale-57bdb.firebaseio.com",
+    projectId: "presale-57bdb",
+    storageBucket: "",
+    messagingSenderId: "681959636801"
+  };
+  firebase.initializeApp(config);
+</script>
 </html>

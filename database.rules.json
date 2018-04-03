@@ -1,0 +1,24 @@
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true",
+    "incid": {
+       "counter": {
+          // this counter is set using a transaction and can only be incremented by 1
+          // the total number of records must be less than 10,000 simply for demo purposes
+          ".write": "newData.isNumber() && ((!data.exists() && newData.val() === 1) || newData.val() === data.val()+1) && newData.val() <= 10000"
+       },
+       "records": {
+         "$id": {
+            // this rule allows adds but no deletes or updates
+            // the id must inherently be in the format rec# where # is the current value of incid/counter
+            // thus, to add a record, you first create a transaction to update the counter, and then use that counter here
+            // the value must be a string less than 1000 characters simply for demo purposes
+            ".write": "$id >= 'rec'+root.child('incid/counter').val() && !data.exists() && newData.isString() && newData.val().length <= 1000"
+         }
+       },
+       // strictly for demo purposes (allows data to be reset)
+       ".write": "!newData.exists()"
+    }
+  }
+}

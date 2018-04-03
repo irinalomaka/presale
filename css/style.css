@@ -20,6 +20,7 @@ html, body {
 	padding: 0px;	
 	width: 100%;
 	height: 100%;
+	color: grey;
 	/*background: linear-gradient(#0052FF,  #8080ff);*/
 }
 
@@ -111,6 +112,24 @@ html, body {
 	font-size: 16px;
 	padding-left: 6px;
 }
+
+#loginEmail, #registerEmail {
+	color: grey;
+	background: white;
+}
+
+#loginEmail:invalid {
+	color: red;
+	background: #ffe6e6;
+}
+
+#registerEmail:invalid {
+	color: red;
+	background: #ffe6e6;
+}
+
+
+
 
 
 
